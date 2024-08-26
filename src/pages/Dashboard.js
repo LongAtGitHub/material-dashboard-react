@@ -49,7 +49,7 @@ function Dashboard() {
       <br></br>
       <MDBox py={3}>
         <Grid container spacing={3}>
-          <Grid item xs={12} md={6} lg={3}>
+          {/* <Grid item xs={12} md={6} lg={3}>
             <MDBox mb={1.5}>
               <ComplexStatisticsCard
                 color="dark"
@@ -63,12 +63,12 @@ function Dashboard() {
                 }}
               />
             </MDBox>
-          </Grid>
-          <Grid item xs={12} md={6} lg={3}>
+          </Grid> */}
+          <Grid item xs={12} md={6} lg={4}>
             <MDBox mb={1.5}>
               <ComplexStatisticsCard
                 icon="leaderboard"
-                title="Today's Users"
+                title="Today's Member"
                 count="2,300"
                 percentage={{
                   color: "success",
@@ -78,12 +78,12 @@ function Dashboard() {
               />
             </MDBox>
           </Grid>
-          <Grid item xs={12} md={6} lg={3}>
+          <Grid item xs={12} md={6} lg={4}>
             <MDBox mb={1.5}>
               <ComplexStatisticsCard
                 color="success"
                 icon={<PaidIcon />}
-                title="Revenue"
+                title="Contribution"
                 count="34k"
                 percentage={{
                   color: "success",
@@ -93,12 +93,12 @@ function Dashboard() {
               />
             </MDBox>
           </Grid>
-          <Grid item xs={12} md={6} lg={3}>
+          <Grid item xs={12} md={6} lg={4}>
             <MDBox mb={1.5}>
               <ComplexStatisticsCard
                 color="primary"
                 icon="person_add"
-                title="Followers"
+                title="New Members"
                 count="+91"
                 percentage={{
                   color: "success",
@@ -115,7 +115,7 @@ function Dashboard() {
               <MDBox mb={3}>
                 <ReportsBarChart
                   color="info"
-                  title="Member enrollment"
+                  title="Member enrollment in a week"
                   description="Recent member enrollment"
                   date="updated 4 min ago"
                   chart={reportsBarChartData}
@@ -126,7 +126,7 @@ function Dashboard() {
               <MDBox mb={3}>
                 <ReportsLineChart
                   color="success"
-                  title="Member enrollment"
+                  title="Member enrollment by month"
                   description={
                     <>
                       (<strong>+15%</strong>) increase in member registration.
@@ -141,12 +141,12 @@ function Dashboard() {
               <MDBox mb={3}>
                 <PieChart
                   icon={{ color: "info", component: "leaderboard" }}
-                  title="Pie Chart"
+                  title="Member Percentage"
                   description="Analytics Insights"
                   chart={{
-                    labels: ["Facebook", "Direct", "Organic", "Referral"],
+                    labels: ["Metric 1", "Metric 2", "Metric 3", "Metric 4"],
                     datasets: {
-                      label: "Projects",
+                      label: "Metrics",
                       backgroundColors: ["info", "primary", "dark", "secondary", "primary"],
                       data: [15, 20, 12, 60],
                     },

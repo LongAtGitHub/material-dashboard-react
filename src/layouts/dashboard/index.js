@@ -139,19 +139,19 @@ function Dashboard() {
             </Grid>
             <Grid item xs={12} md={6} lg={4}>
               <MDBox mb={3}>
-                <PieChart
+                {/* <PieChart
                   icon={{ color: "info", component: "leaderboard" }}
-                  title="Pie Chart"
+                  title="Member Metrics"
                   description="Analytics Insights"
                   chart={{
-                    labels: ["Facebook", "Direct", "Organic", "Referral"],
+                    labels: ["Metric 1", "Metric 2", "Metric 3", "Metric 4"],
                     datasets: {
-                      label: "Projects",
+                      label: "Enter metrics",
                       backgroundColors: ["info", "primary", "dark", "secondary", "primary"],
                       data: [15, 20, 12, 60],
                     },
                   }}
-                />
+                /> */}
               </MDBox>
             </Grid>
           </Grid>
