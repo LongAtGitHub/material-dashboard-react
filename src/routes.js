@@ -59,22 +59,30 @@ const routes = [
     route: "/dashboard",
     component: <Dashboard />,
   },
-  {
-    type: "collapse",
-    name: "Tax Management",
-    key: "tax",
-    icon: <Icon fontSize="small">dashboard</Icon>,
-    route: "/tax-management",
-    component: <TaxManagement />,
-  },
   // {
   //   type: "collapse",
-  //   name: "Tables",
-  //   key: "tables",
-  //   icon: <Icon fontSize="small">table_view</Icon>,
-  //   route: "/tables",
-  //   component: <Tables />,
+  //   name: "Tax Management",
+  //   key: "tax",
+  //   icon: <Icon fontSize="small">dashboard</Icon>,
+  //   route: "/tax-management",
+  //   component: <TaxManagement />,
   // },
+  {
+    type: "collapse",
+    name: "Cash Out",
+    key: "cash-out",
+    icon: <Icon fontSize="small">assignment</Icon>,
+    route: "/cashout",
+    component: <Cashout />,
+  },
+  {
+    type: "collapse",
+    name: "Tables",
+    key: "tables",
+    icon: <Icon fontSize="small">table_view</Icon>,
+    route: "/tables",
+    component: <Tables />,
+  },
   // {
   //   type: "collapse",
   //   name: "Billing",
@@ -123,14 +131,6 @@ const routes = [
   //   route: "/authentication/sign-up",
   //   component: <SignUp />,
   // },
-  {
-    type: "collapse",
-    name: "Cash Out",
-    key: "cash-out",
-    icon: <Icon fontSize="small">assignment</Icon>,
-    route: "/cashout",
-    component: <Cashout />,
-  },
 ];
 
 export default routes;

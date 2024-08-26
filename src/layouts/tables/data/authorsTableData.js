@@ -20,11 +20,12 @@ import MDBox from "components/MDBox";
 import MDTypography from "components/MDTypography";
 import MDAvatar from "components/MDAvatar";
 import MDBadge from "components/MDBadge";
-
+import button from "assets/theme/components/button";
 // Images
 import team2 from "assets/images/team-2.jpg";
 import team3 from "assets/images/team-3.jpg";
 import team4 from "assets/images/team-4.jpg";
+import MDButton from "components/MDButton";
 
 export default function data() {
   const Author = ({ image, name, email }) => (
@@ -51,10 +52,10 @@ export default function data() {
   return {
     columns: [
       { Header: "author", accessor: "author", width: "45%", align: "left" },
-      { Header: "function", accessor: "function", align: "left" },
-      { Header: "status", accessor: "status", align: "center" },
-      { Header: "employed", accessor: "employed", align: "center" },
-      { Header: "action", accessor: "action", align: "center" },
+      { Header: "Occupation", accessor: "function", align: "left" },
+      // { Header: "status", accessor: "status", align: "center" },
+      { Header: "Last Donation", accessor: "employed", align: "center" },
+      { Header: "Generate Tax Receipt", accessor: "action", align: "center" },
     ],
 
     rows: [
@@ -72,9 +73,12 @@ export default function data() {
           </MDTypography>
         ),
         action: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            Edit
-          </MDTypography>
+          // <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
+          //   Edit
+          // </MDTypography>
+          <MDButton variant="contained" size="small" color="info">
+            Generate
+          </MDButton>
         ),
       },
       {
@@ -91,9 +95,9 @@ export default function data() {
           </MDTypography>
         ),
         action: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            Edit
-          </MDTypography>
+          <MDButton variant="contained" size="small" color="info">
+            Generate
+          </MDButton>
         ),
       },
       {
@@ -110,9 +114,9 @@ export default function data() {
           </MDTypography>
         ),
         action: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            Edit
-          </MDTypography>
+          <MDButton variant="contained" size="small" color="info">
+            Generate
+          </MDButton>
         ),
       },
       {
@@ -129,9 +133,9 @@ export default function data() {
           </MDTypography>
         ),
         action: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            Edit
-          </MDTypography>
+          <MDButton variant="contained" size="small" color="info">
+            Generate
+          </MDButton>
         ),
       },
       {
@@ -148,9 +152,9 @@ export default function data() {
           </MDTypography>
         ),
         action: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            Edit
-          </MDTypography>
+          <MDButton variant="contained" size="small" color="info">
+            Generate
+          </MDButton>
         ),
       },
       {
@@ -167,9 +171,9 @@ export default function data() {
           </MDTypography>
         ),
         action: (
-          <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
-            Edit
-          </MDTypography>
+          <MDButton variant="contained" size="small" color="info">
+            Generate
+          </MDButton>
         ),
       },
     ],
