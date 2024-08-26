@@ -104,4 +104,5 @@ function PaymentMethod() {
   );
 }
 
-export default PaymentMethod;
+function blank() {}
+export default blank;

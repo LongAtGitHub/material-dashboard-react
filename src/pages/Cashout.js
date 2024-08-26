@@ -72,7 +72,7 @@ function Billing() {
                   </CardActionArea>
                 </Grid>
                 <Grid item xs={12}>
-                  <PaymentMethod />
+                  {/* <PaymentMethod /> */}
                 </Grid>
               </Grid>
             </Grid>

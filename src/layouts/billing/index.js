@@ -60,9 +60,6 @@ function Billing() {
                     value="$455.00"
                   />
                 </Grid>
-                <Grid item xs={12}>
-                  <PaymentMethod />
-                </Grid>
               </Grid>
             </Grid>
             <Grid item xs={12} lg={4}>

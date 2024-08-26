@@ -89,14 +89,14 @@ function Transactions() {
           <Transaction
             color="success"
             icon="expand_less"
-            name="Stripe"
+            name="Jimmy"
             description="26 March 2020, at 13:45 PM"
             value="+ $ 750"
           />
           <Transaction
             color="success"
             icon="expand_less"
-            name="HubSpot"
+            name="Kim"
             description="26 March 2020, at 12:30 PM"
             value="+ $ 1,000"
           />
@@ -110,7 +110,7 @@ function Transactions() {
           <Transaction
             color="dark"
             icon="priority_high"
-            name="Webflow"
+            name="Steve"
             description="26 March 2020, at 05:00 AM"
             value="Pending"
           />

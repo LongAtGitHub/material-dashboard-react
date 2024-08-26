@@ -48,6 +48,7 @@ import Cashout from "pages/Cashout";
 import Dashboard from "pages/Dashboard";
 // @mui icons
 import Icon from "@mui/material/Icon";
+import TaxManagement from "pages/TaxManagement";
 
 const routes = [
   {
@@ -58,7 +59,14 @@ const routes = [
     route: "/dashboard",
     component: <Dashboard />,
   },
-
+  {
+    type: "collapse",
+    name: "Tax Management",
+    key: "tax",
+    icon: <Icon fontSize="small">dashboard</Icon>,
+    route: "/tax-management",
+    component: <TaxManagement />,
+  },
   // {
   //   type: "collapse",
   //   name: "Tables",
