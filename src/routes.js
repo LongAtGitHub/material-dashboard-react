@@ -77,10 +77,10 @@ const routes = [
   },
   {
     type: "collapse",
-    name: "Tables",
-    key: "tables",
+    name: "Tax Printing",
+    key: "tax-print",
     icon: <Icon fontSize="small">table_view</Icon>,
-    route: "/tables",
+    route: "/tax-print",
     component: <Tables />,
   },
   // {

@@ -47,19 +47,20 @@ function Billing() {
                 {/* <Grid item xs={12} xl={6}>
                   <MasterCard number={`XXXXXXXXXXXX3785`} holder="jack peterson" expires="11/22" />
                 </Grid> */}
-                <Grid item xs={12} md={6} xl={4}>
+                <Grid item xs={12} md={6} xl={6}>
                   <CardActionArea
                     onClick={() => alert("Transaction will happen in 3-5 businessd days")}
                   >
                     <DefaultInfoCard
                       icon="account_balance"
                       title="Cash Out"
-                      description="3-5 businessd days"
+                      description={"3-5 businessd days \n \n \n"}
                       // value="+$2000"
+                      style={{ height: "200%" }}
                     />
                   </CardActionArea>
                 </Grid>
-                <Grid item xs={12} md={6} xl={4}>
+                <Grid item xs={12} md={6} xl={6}>
                   <CardActionArea
                     onClick={() => alert("Transaction will happen in 1 businessd day")}
                   >
@@ -70,9 +71,6 @@ function Billing() {
                       // value="$455.00"
                     />
                   </CardActionArea>
-                </Grid>
-                <Grid item xs={12}>
-                  {/* <PaymentMethod /> */}
                 </Grid>
               </Grid>
             </Grid>
