@@ -59,16 +59,16 @@ function Transactions() {
           sx={{ listStyle: "none" }}
         >
           <Transaction
-            color="error"
-            icon="expand_more"
-            name="Netflix"
+            color="success"
+            icon="expand_less"
+            name="Lucas"
             description="27 March 2020, at 12:30 PM"
-            value="- $ 2,500"
+            value="+ $ 2,500"
           />
           <Transaction
             color="success"
             icon="expand_less"
-            name="Apple"
+            name="Josh"
             description="27 March 2020, at 04:30 AM"
             value="+ $ 2,000"
           />
