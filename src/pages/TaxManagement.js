@@ -16,6 +16,7 @@ import {
 import { DatePicker } from "@mui/lab"; // DatePicker component for date selection
 import DashboardLayout from "examples/LayoutContainers/DashboardLayout";
 import Tables from "layouts/tables";
+import Footer from "layoutComponents/Footer";
 
 import ExampleTable from "examples/Tables/DataTable";
 
@@ -69,6 +70,7 @@ function TaxManagement() {
         </Grid>
       </Paper>
       <Tables />
+      <Footer />
     </DashboardLayout>
   );
 }
