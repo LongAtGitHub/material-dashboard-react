@@ -44,9 +44,6 @@ function Billing() {
           <Grid container spacing={3}>
             <Grid item xs={12} lg={8}>
               <Grid container spacing={3}>
-                {/* <Grid item xs={12} xl={6}>
-                  <MasterCard number={`XXXXXXXXXXXX3785`} holder="jack peterson" expires="11/22" />
-                </Grid> */}
                 <Grid item xs={12} md={6} xl={6}>
                   <CardActionArea
                     onClick={() => alert("Transaction will happen in 3-5 businessd days")}
@@ -90,6 +87,7 @@ function Billing() {
           </Grid>
         </MDBox>
       </MDBox>
+      <br />
       <Footer />
     </DashboardLayout>
   );

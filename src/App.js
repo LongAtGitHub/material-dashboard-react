@@ -52,6 +52,7 @@ import { useMaterialUIController, setMiniSidenav, setOpenConfigurator } from "co
 // Images
 import brandWhite from "assets/images/logo-ct.png";
 import brandDark from "assets/images/logo-ct-dark.png";
+import revestifyBrand from "assets/RevestifyBranding/logo.svg";
 
 export default function App() {
   const [controller, dispatch] = useMaterialUIController();
@@ -178,7 +179,10 @@ export default function App() {
         <>
           <Sidenav
             color={sidenavColor}
-            brand={(transparentSidenav && !darkMode) || whiteSidenav ? brandDark : brandWhite}
+            // change brand logo below
+            brand={
+              (transparentSidenav && !darkMode) || whiteSidenav ? revestifyBrand : revestifyBrand
+            }
             brandName="Revestify"
             routes={routes}
             onMouseEnter={handleOnMouseEnter}

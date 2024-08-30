@@ -37,7 +37,7 @@ Coded by www.creative-tim.com
 
 // Material Dashboard 2 React layouts
 
-import Tables from "layouts/tables";
+// import Tables from "layouts/tables";
 import Billing from "layouts/billing";
 import RTL from "layouts/rtl";
 import Notifications from "layouts/notifications";
@@ -48,7 +48,7 @@ import Cashout from "pages/Cashout";
 import Dashboard from "pages/Dashboard";
 // @mui icons
 import Icon from "@mui/material/Icon";
-import TaxManagement from "pages/TaxManagement";
+import Tables from "pages/TaxManagement";
 
 const routes = [
   {
@@ -69,19 +69,19 @@ const routes = [
   // },
   {
     type: "collapse",
-    name: "Cash Out",
-    key: "cash-out",
-    icon: <Icon fontSize="small">assignment</Icon>,
-    route: "/cashout",
-    component: <Cashout />,
+    name: "Tax Printing",
+    key: "tax-print",
+    icon: <Icon fontSize="small">receipt_long</Icon>,
+    route: "/tax-print",
+    component: <Tables />,
   },
   {
     type: "collapse",
-    name: "Tax Printing",
-    key: "tax-print",
-    icon: <Icon fontSize="small">table_view</Icon>,
-    route: "/tax-print",
-    component: <Tables />,
+    name: "Cash Out",
+    key: "cash-out",
+    icon: <Icon fontSize="small">paid_icon</Icon>,
+    route: "/cash-out",
+    component: <Cashout />,
   },
   // {
   //   type: "collapse",
