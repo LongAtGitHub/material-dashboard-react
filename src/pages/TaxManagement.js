@@ -48,9 +48,9 @@ function TaxManagement() {
                 py={3}
                 px={2}
                 variant="gradient"
-                bgColor="info"
+                bgColor="success"
                 borderRadius="lg"
-                coloredShadow="info"
+                coloredShadow="success"
               >
                 <MDTypography variant="h6" color="white">
                   Member Tax Receipt

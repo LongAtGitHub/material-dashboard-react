@@ -46,7 +46,7 @@ const baseProperties = {
 
 const baseHeadingProperties = {
   fontFamily: baseProperties.fontFamily,
-  color: dark.main,
+  color: "#fff000",
   fontWeight: baseProperties.fontWeightBold,
 };
 

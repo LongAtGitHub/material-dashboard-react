@@ -33,41 +33,57 @@ import BillingInformation from "layouts/billing/components/BillingInformation";
 import Transactions from "layouts/billing/components/Transactions";
 import Button from "@mui/material/Button";
 import { CardActionArea } from "@mui/material";
+import Container from "@mui/material";
+import GradientLineChart from "examples/Charts/LineCharts/GradientLineChart";
 
+// Data
+import DefaultLineChart from "examples/Charts/LineCharts/DefaultLineChart";
+import reportsLineChartData from "layouts/dashboard/data/reportsLineChartData";
+const { sales, tasks } = reportsLineChartData;
+function MyLineChart() {
+  return (
+    <DefaultLineChart
+      chart={{
+        labels: ["Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
+        datasets: [
+          {
+            label: "Organic Search",
+            color: "info",
+            data: [50, 40, 300, 220, 500, 250, 400, 230, 500],
+          },
+          {
+            label: "Referral",
+            color: "dark",
+            data: [30, 90, 40, 140, 290, 290, 340, 230, 400],
+          },
+          {
+            label: "Direct",
+            color: "primary",
+            data: [40, 80, 70, 90, 30, 90, 140, 130, 200],
+          },
+        ],
+      }}
+    />
+  );
+}
 function Billing() {
   return (
     <DashboardLayout>
       <DashboardNavbar absolute isMini />
       <MDBox mt={8}>
         <MDBox mb={3}>
-          <h3>Balance: $500,000</h3>
           <Grid container spacing={3}>
             <Grid item xs={12} lg={8}>
               <Grid container spacing={3}>
-                <Grid item xs={12} md={6} xl={6}>
-                  <CardActionArea
-                    onClick={() => alert("Transaction will happen in 3-5 businessd days")}
-                  >
-                    <DefaultInfoCard
-                      icon="account_balance"
-                      title="Cash Out"
-                      description={"3-5 businessd days \n \n \n"}
-                      // value="+$2000"
-                      style={{ height: "200%" }}
-                    />
-                  </CardActionArea>
-                </Grid>
-                <Grid item xs={12} md={6} xl={6}>
-                  <CardActionArea
-                    onClick={() => alert("Transaction will happen in 1 businessd day")}
-                  >
-                    <DefaultInfoCard
-                      icon="paypal"
-                      title="Instant cash out"
-                      description="1 business day + 10% fee"
-                      // value="$455.00"
-                    />
-                  </CardActionArea>
+                <Grid item xs={12} md={12} xl={12}>
+                  {/* <div style={{ backgroundColor: "white" }}>Hello</div> */}
+                  <MDBox bgColor="white" borderRadius="lg">
+                    <div style={{ padding: "5%" }}>
+                      <h4>Total Balance</h4>
+                      <h2>$500,000</h2>
+                    </div>
+                    <MyLineChart />
+                  </MDBox>
                 </Grid>
               </Grid>
             </Grid>

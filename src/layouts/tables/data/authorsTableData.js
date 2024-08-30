@@ -76,7 +76,7 @@ export default function data() {
           // <MDTypography component="a" href="#" variant="caption" color="text" fontWeight="medium">
           //   Edit
           // </MDTypography>
-          <MDButton variant="contained" size="small" color="info">
+          <MDButton variant="contained" size="small" color="success">
             Generate
           </MDButton>
         ),
@@ -95,7 +95,7 @@ export default function data() {
           </MDTypography>
         ),
         action: (
-          <MDButton variant="contained" size="small" color="info">
+          <MDButton variant="contained" size="small" color="success">
             Generate
           </MDButton>
         ),
@@ -114,7 +114,7 @@ export default function data() {
           </MDTypography>
         ),
         action: (
-          <MDButton variant="contained" size="small" color="info">
+          <MDButton variant="contained" size="small" color="success">
             Generate
           </MDButton>
         ),
@@ -133,7 +133,7 @@ export default function data() {
           </MDTypography>
         ),
         action: (
-          <MDButton variant="contained" size="small" color="info">
+          <MDButton variant="contained" size="small" color="success">
             Generate
           </MDButton>
         ),
@@ -152,7 +152,7 @@ export default function data() {
           </MDTypography>
         ),
         action: (
-          <MDButton variant="contained" size="small" color="info">
+          <MDButton variant="contained" size="small" color="success">
             Generate
           </MDButton>
         ),
@@ -171,7 +171,7 @@ export default function data() {
           </MDTypography>
         ),
         action: (
-          <MDButton variant="contained" size="small" color="info">
+          <MDButton variant="contained" size="small" color="success">
             Generate
           </MDButton>
         ),
