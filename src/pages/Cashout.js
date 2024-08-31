@@ -76,13 +76,46 @@ function Billing() {
             <Grid item xs={12} lg={8}>
               <Grid container spacing={3}>
                 <Grid item xs={12} md={12} xl={12}>
-                  {/* <div style={{ backgroundColor: "white" }}>Hello</div> */}
                   <MDBox bgColor="white" borderRadius="lg">
                     <div style={{ padding: "5%" }}>
                       <h4>Total Balance</h4>
-                      <h2>$500,000</h2>
+                      <h2 style={{ color: "green" }}>$500,000</h2>
                     </div>
-                    <MyLineChart />
+                    {/* Set this Grid as a container */}
+                    <Grid container spacing={4} style={{ paddingRight: "5%" }}>
+                      {/* Adjust item sizes for different breakpoints */}
+                      <Grid item xs={12} md={6} xl={6}>
+                        <MyLineChart />
+                      </Grid>
+                      <Grid item xs={12} md={6} xl={6}>
+                        <CardActionArea
+                          onClick={() => alert("Transaction will happen in 3-5 businessd days")}
+                        >
+                          <DefaultInfoCard
+                            color="success"
+                            icon="account_balance"
+                            title="Cash Out"
+                            description={"3-5 businessd days \n \n \n"}
+                            // value="+$2000"
+                            style={{ height: "200%" }}
+                          />
+                        </CardActionArea>
+                        <br></br>
+                        <CardActionArea
+                          onClick={() => alert("Transaction will happen in 3-5 businessd days")}
+                        >
+                          <DefaultInfoCard
+                            color="success"
+                            icon="account_balance"
+                            title="Instant Cash Out"
+                            description={"Instantly"}
+                            // value="+$2000"
+                            style={{ height: "200%" }}
+                          />
+                        </CardActionArea>
+                        <br />
+                      </Grid>
+                    </Grid>
                   </MDBox>
                 </Grid>
               </Grid>
