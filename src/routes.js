@@ -46,6 +46,7 @@ import SignIn from "layouts/authentication/sign-in";
 import SignUp from "layouts/authentication/sign-up";
 import Cashout from "pages/Cashout";
 import Dashboard from "pages/Dashboard";
+import CustomerService from "pages/CustomerService";
 // @mui icons
 import Icon from "@mui/material/Icon";
 import Tables from "pages/TaxManagement";
@@ -83,6 +84,15 @@ const routes = [
     route: "/cash-out",
     component: <Cashout />,
   },
+  {
+    type: "collapse",
+    name: "Customer Service",
+    key: "customer-service",
+    icon: <Icon fontSize="small">support_agent</Icon>,
+    route: "/customer-service",
+    component: <CustomerService />,
+  },
+
   // {
   //   type: "collapse",
   //   name: "Billing",
